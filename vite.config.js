@@ -10,7 +10,7 @@ export default ({ mode }) => {
   // 获取环境变量
   const env = loadEnv(mode, process.cwd());
   return defineConfig({
-    base: env.VITE_APP_BASE_URL, // 动态改变base值
+    base: '/3dmap/', // 动态改变base值
     assetsInclude: [
       "**/*.glb",
       "**/*.gltf",
